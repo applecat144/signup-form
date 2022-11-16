@@ -22,6 +22,10 @@ html {
   border: 0;
 }
 
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 
 body {
   width: 100vw;
@@ -41,10 +45,11 @@ body {
   width: 100%;
   height: 20%;
   margin: 150px 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .banner img {
@@ -52,12 +57,103 @@ body {
   aspect-ratio: 1/1;
 }
 
-.banner h1 {
-  flex: 1;
+#axe-corp {
+  margin: 0 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 3.0rem;
-  font-weight: fastest;
-  color: rgb(248, 229, 231);
+  color: rgb(231, 231, 231);
+  font-family: fastest;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  background-color:  rgba(21, 87, 2, 0.211);
+}
+
+.main .form {
+  height: 40%;
+  background-color: rgb(231, 231, 231);
+  box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.147), 0px -2px 3px 2px rgba(0, 0, 0, 0.147);
+}
+
+.main > :first-child,
+.main > :last-child{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main > :first-child{
+  justify-content: end;
+}
+
+.main > * {
+  padding: 20px 30px;
+}
+
+.header > * {
+  width: 50%;
+  margin: 20px 0;
+}
+
+form {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+form > * {
+  width: 50%;
+  height: 33.33333333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding-right: 40px;
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+input {
+  margin: 10px 0;
+  height: 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.247);
+  display: flex;
+  align-items: center;
+  padding: 0 3px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px 5px rgba(159, 168, 255, 0.5);
+}
+
+input:invalid {
+  outline: 1.5px solid red;
+}
+
+button {
+  width: 25%;
+  height: 3rem;
+  margin: 40px 0;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.247);
 }
